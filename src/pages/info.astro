@@ -1,0 +1,56 @@
+---
+import Template from '../layouts/Layout.astro';
+
+import CampingMap from "../media/camping-map.jpg";
+---
+
+<Template title="Dive Barn | Info">
+  <main>
+    <h1>Info</h1>
+    <p>All the shit ya gonna need / will be supplied for this big weekend.</p>
+
+    <section id="info">
+      <h2>Info & Hours</h2>
+      <section class="info__essential">
+        <p>Address: address</p>
+        <p>Date & time: info here</p>
+        <p>Sleeping: basic sleeping info</p>
+      </section>
+      <section class="info__map">
+        <p>Probably should put the maps here?</p>
+      </section>
+    </section>
+
+    <section id="camping">
+      <h2>Camping</h2>
+
+      <section class="supplies__map">
+        <p>Include the map here</p>
+        <img src={ CampingMap } alt="A map showing where to camp and park."/>
+    </section>
+
+    <section id="supplies">
+      <h2>Food & Supplies</h2>
+      <h3>What will be provided</h3>
+      <b>Friday - Dinner</b>
+
+      <b>Saturday - Breakfast</b>
+    </section>
+
+    <section id="rules">
+      <h2>Do's & Dont's</h2>
+    </section>
+
+    <section id="safety">
+      <h2>Fire & Safety</h2>
+      <p>NO FIRE</p>
+      <p>Smoking section</p>
+    </section>
+  </main>
+</Template>
+
+<style lang="scss">
+  .info {
+    color: red;
+  }
+</style>
